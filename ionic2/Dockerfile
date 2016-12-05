@@ -31,7 +31,7 @@ RUN curl -sL https://deb.nodesource.com/setup_6.x | bash -
 # nodejs includes matching npm as well
 RUN apt-get update && apt-get install -y -q \
     nodejs \
-    bzip2 \
+    bzip2 git \
     libfontconfig \
     && apt-get -y autoclean \
     && rm -rf /var/lib/apt/lists/*
